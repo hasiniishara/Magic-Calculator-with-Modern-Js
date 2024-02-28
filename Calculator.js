@@ -1,7 +1,3 @@
-//Declare three variables
-let num1;
-let num2;
-
 //Function for addition
 function add(num1, num2) {
     return `${num1} plus ${num2} equals ${num1 + num2}`;
@@ -41,6 +37,10 @@ const prompt = require('prompt-sync')();
 //Declares a variable named userContinueCalculating and initializes it with the boolean value true as a default.
 let userContinueCalculating = true;
  
+//Declare three variables
+let num1;
+let num2;
+
 //To print the Welcome message to the screen
 console.log("\nWelcome to the Magic Calculator!");
 
