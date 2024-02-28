@@ -56,6 +56,10 @@ while (userContinueCalculating) {
     }else if (operation === "magic") {
         //Declare variable
          num1 = parseFloat(prompt("Enter the number: "));
+         if (isNaN(num1)) {
+            console.log("Invalid numbers. Please enter valid numbers.");
+            continue;
+        }
     }else if  (operation !== "add" && operation !== "subtract" && operation !== "multiply" && operation !== "divide"){
         //If user input invalid operations, Ssytem print out the error message.
         console.log("Invalid Operation. Please choose one of the specified operations.");
@@ -63,19 +67,21 @@ while (userContinueCalculating) {
     }
     else {
         //Declare two varibles & getting user inputs
-         num2 = parseFloat(prompt("Enter First number: "));
-         num3 = parseFloat(prompt("Enter Second number: "));
+         num1 = parseFloat(prompt("Enter First number: "));
+         num2 = parseFloat(prompt("Enter Second number: "));
+
+         //To print error msg if inputs are not numbers
+        if (isNaN(num1) || isNaN(num2)) {
+            console.log("Invalid numbers. Please enter valid numbers.");
+            continue;
+        }
     }
     
 
-    //To print error msg if inputs are not numbers
-    if (isNaN(num2) || isNaN(num3)) {
-        console.log("Invalid numbers. Please enter valid numbers.");
-        continue;
-    }
+    
 
     //To skip divide by 0 and print an error msg
-    if (num3 === 0 && operation === "divide") {
+    if (num2 === 0 && operation === "divide") {
         console.log("Cannot divide by zero. Try another operation.");
         continue;
     }
@@ -83,16 +89,16 @@ while (userContinueCalculating) {
     //call the correct function according to selected operation
     switch (operation) {
         case "add":
-            console.log(add(num2, num3));
+            console.log(add(num1, num2));
             break;
         case "subtract":
-            console.log(subtract(num2, num3));
+            console.log(subtract(num1, num2));
             break;
         case "multiply":
-            console.log(multiply(num2, num3));
+            console.log(multiply(num1, num2));
             break;
         case "divide":
-            console.log(divide(num2, num3));
+            console.log(divide(num1, num2));
             break;
         case "magic":
             console.log(magicOperation(num1));
