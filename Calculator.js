@@ -1,7 +1,7 @@
 //Declare three variables
 let num1;
 let num2;
-let num3;
+
 //Function for addition
 function add(num1, num2) {
     return `${num1} plus ${num2} equals ${num1 + num2}`;
@@ -62,7 +62,7 @@ while (userContinueCalculating) {
         }
     }else if  (operation !== "add" && operation !== "subtract" && operation !== "multiply" && operation !== "divide"){
         //If user input invalid operations, Ssytem print out the error message.
-        console.log("Invalid Operation. Please choose one of the specified operations.");
+        console.log("InI update valid Operation. Please choose one of the specified operations.");
         continue;
     }
     else {
