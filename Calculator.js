@@ -1,4 +1,7 @@
-
+//Declare three variables
+let num1;
+let num2;
+let num3;
 //Function for addition
 function add(num1, num2) {
     return `${num1} plus ${num2} equals ${num1 + num2}`;
@@ -52,7 +55,7 @@ while (userContinueCalculating) {
         break;
     }else if (operation === "magic") {
         //Declare variable
-        var num1 = parseFloat(prompt("Enter the number: "));
+         num1 = parseFloat(prompt("Enter the number: "));
     }else if  (operation !== "add" && operation !== "subtract" && operation !== "multiply" && operation !== "divide"){
         //If user input invalid operations, Ssytem print out the error message.
         console.log("Invalid Operation. Please choose one of the specified operations.");
@@ -60,8 +63,8 @@ while (userContinueCalculating) {
     }
     else {
         //Declare two varibles & getting user inputs
-        var num2 = parseFloat(prompt("Enter First number: "));
-        var num3 = parseFloat(prompt("Enter Second number: "));
+         num2 = parseFloat(prompt("Enter First number: "));
+         num3 = parseFloat(prompt("Enter Second number: "));
     }
     
 
