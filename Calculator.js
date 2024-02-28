@@ -77,9 +77,6 @@ while (userContinueCalculating) {
         }
     }
     
-
-    
-
     //To skip divide by 0 and print an error msg
     if (num2 === 0 && operation === "divide") {
         console.log("Cannot divide by zero. Try another operation.");
