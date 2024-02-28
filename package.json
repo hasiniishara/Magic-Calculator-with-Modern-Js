@@ -1,0 +1,15 @@
+{
+  "name": "magic-calculator-with-modern-js",
+  "version": "1.0.0",
+  "description": "Craft a “Magic Calculator” using JavaScript to demonstrate core programming concepts including data types, functions, loops, switch statements, logical operators, and math operators. This interactive program will engage users by performing arithmetic operations and magical surprises based on their inputs.",
+  "main": "Calculator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "prompt-sync": "^4.2.0"
+  }
+}
